@@ -24,9 +24,7 @@ class CircuitsFragment : Fragment(), CircuitsAdapter.OnCircuitsClickListener {
         binding = FragmentCircuitsBinding.inflate(layoutInflater)
         (requireActivity() as MainActivity2).changeToolbarTitle("CIRCUITS")
         val view = inflater.inflate(R.layout.fragment_circuits, container, false)
-
         setUpRecyclerView()
-
         return binding.root
     }
 
