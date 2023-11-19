@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/news"
+        android:title="@string/nameNews"
+        android:icon="@drawable/formula1logo" />
+    <item
+        android:id="@+id/drivers"
+        android:title="@string/nameDrivers"
+        android:icon="@drawable/formula1logo"
+        />
+    <item
+        android:id="@+id/racing"
+        android:title="@string/nameRacing"
+        android:icon="@drawable/formula1logo" />
+    <item
+        android:id="@+id/circuits"
+        android:title="@string/nameCircuits"
+        android:icon="@drawable/formula1logo" />
+
+</menu>
