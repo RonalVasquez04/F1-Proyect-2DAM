@@ -15,7 +15,6 @@
             app:showAsAction="always"
             />
 
-
     </group>
     <group>
         <item android:title="Configuration and Version">
