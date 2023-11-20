@@ -1,5 +1,13 @@
 package es.rfvl.f1
 
+import android.Manifest
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +16,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import es.rfvl.f1.adapters.carrerasAdapter
@@ -27,9 +39,8 @@ class RacingFragment : Fragment() , carrerasAdapter.OnRaceClickListener{
         (requireActivity() as MainActivity2).changeToolbarTitle("RACING")
         val view = inflater.inflate(R.layout.fragment_racing, container, false)
         setUpRecyclerViewRace()
+
         return binding.root
-
-
     }
 
     private fun setUpRecyclerViewRace(){
@@ -73,8 +84,6 @@ class RacingFragment : Fragment() , carrerasAdapter.OnRaceClickListener{
 
         snackbar.show()
     }
-
-
 
 
 
