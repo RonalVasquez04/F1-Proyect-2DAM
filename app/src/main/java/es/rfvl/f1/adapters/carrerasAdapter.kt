@@ -52,7 +52,6 @@ class carrerasAdapter(private val context: Context, private val race: MutableLis
     }
 
     interface OnRaceClickListener{
-        abstract val PERMISO_CAMARA_REQUEST_CODE: Int
 
         fun onRaceClick(c: Carreras)
     }

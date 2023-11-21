@@ -48,7 +48,7 @@ class MainActivity2 : AppCompatActivity() {
                 }
                 R.id.racing -> {
 
-                    val nuevoFragmento = RacingFragment(222)
+                    val nuevoFragmento = RacingFragment()
                     this.supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentcontainerview, nuevoFragmento)
                         .addToBackStack(null)
