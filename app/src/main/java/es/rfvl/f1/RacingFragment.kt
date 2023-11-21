@@ -77,7 +77,6 @@ class RacingFragment(override val PERMISO_CAMARA_REQUEST_CODE: Int) : Fragment()
         val customView = layoutInflater.inflate(R.layout.custom_snackbar, null)
 
         customView.findViewById<Button>(R.id.btnYes).setOnClickListener {
-            Toast.makeText(requireContext(),"Permission granted",Toast.LENGTH_SHORT).show()
 
             if (ContextCompat.checkSelfPermission(
                     requireContext(),
@@ -92,7 +91,6 @@ class RacingFragment(override val PERMISO_CAMARA_REQUEST_CODE: Int) : Fragment()
         }
 
         customView.findViewById<Button>(R.id.btnNo).setOnClickListener {
-            Toast.makeText(requireContext(),"Permission not granted",Toast.LENGTH_SHORT).show()
             snackbar.dismiss()
         }
 
