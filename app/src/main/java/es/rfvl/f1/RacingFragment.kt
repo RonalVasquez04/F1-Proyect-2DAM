@@ -18,7 +18,7 @@ import es.rfvl.f1.classes.Carreras
 import es.rfvl.f1.databinding.FragmentRacingBinding
 
 
-class RacingFragment(override val PERMISO_CAMARA_REQUEST_CODE: Int) : Fragment() , carrerasAdapter.OnRaceClickListener{
+class RacingFragment() : Fragment() , carrerasAdapter.OnRaceClickListener{
 
     private lateinit var binding: FragmentRacingBinding
 
@@ -100,7 +100,7 @@ class RacingFragment(override val PERMISO_CAMARA_REQUEST_CODE: Int) : Fragment()
             ActivityCompat.requestPermissions(
                 requireActivity(),
                 arrayOf(android.Manifest.permission.CAMERA),
-                PERMISO_CAMARA_REQUEST_CODE
+                0
             )
         }
     }
