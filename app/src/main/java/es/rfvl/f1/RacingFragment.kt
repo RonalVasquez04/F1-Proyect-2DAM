@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -93,9 +92,7 @@ class RacingFragment(override val PERMISO_CAMARA_REQUEST_CODE: Int) : Fragment()
         customView.findViewById<Button>(R.id.btnNo).setOnClickListener {
             snackbar.dismiss()
         }
-
         snackbarView.addView(customView)
-
         snackbar.show()
     }
     private fun solicitarPermisoCamara() {
