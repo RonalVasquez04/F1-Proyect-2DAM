@@ -1,21 +1,10 @@
 package es.rfvl.f1
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
-import android.animation.ObjectAnimator
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.View
-import android.view.animation.AccelerateDecelerateInterpolator
-import android.widget.ImageView
 import android.widget.Switch
-import android.widget.TextView
-import android.widget.Toast
-import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
@@ -59,7 +48,7 @@ class MainActivity2 : AppCompatActivity() {
                 }
                 R.id.racing -> {
 
-                    val nuevoFragmento = RacingFragment()
+                    val nuevoFragmento = RacingFragment(222)
                     this.supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentcontainerview, nuevoFragmento)
                         .addToBackStack(null)
