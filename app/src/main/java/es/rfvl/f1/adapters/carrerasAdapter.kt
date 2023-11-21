@@ -9,7 +9,6 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import es.rfvl.f1.R
 import es.rfvl.f1.classes.Carreras
-import es.rfvl.f1.classes.Drivers
 
 class carrerasAdapter(private val context: Context, private val race: MutableList<Carreras>,private val mListener: carrerasAdapter.OnRaceClickListener): RecyclerView.Adapter<carrerasAdapter.CarrerasViewHolder>() {
 
@@ -53,6 +52,8 @@ class carrerasAdapter(private val context: Context, private val race: MutableLis
     }
 
     interface OnRaceClickListener{
+        abstract val PERMISO_CAMARA_REQUEST_CODE: Int
+
         fun onRaceClick(c: Carreras)
     }
 }
