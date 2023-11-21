@@ -18,5 +18,4 @@
         android:id="@+id/circuits"
         android:title="@string/nameCircuits"
         android:icon="@drawable/iconcircuitobottom" />
-
 </menu>
